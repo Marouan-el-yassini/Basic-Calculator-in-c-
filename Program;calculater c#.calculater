@@ -1,0 +1,56 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace simple_caalculater
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int numb1;
+            int numb2;
+            String answer;
+            int reslt;
+            
+
+            Console.WriteLine("Hello Welcome To The World Of Operation?");
+            Console.WriteLine("Enter Your First Number");
+
+            numb1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Your Second Number");
+           
+            numb2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Your Opertion: a:addition ,s:soustration");
+
+            answer = Console.ReadLine();
+
+            if (answer == "a")
+            {
+                reslt = numb1 + numb2;
+
+            }
+            else 
+            {
+                reslt = numb1 - numb2;
+            }
+
+            Console.WriteLine(reslt);
+            Console.WriteLine("Thanks For Using ouer Simple Calculater");
+
+
+
+
+
+
+
+
+            Console.ReadKey();
+        }
+    }
+}
